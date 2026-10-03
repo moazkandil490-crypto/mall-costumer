@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 # Load the K-Means model
 model = joblib.load('kmeans_model.joblib')
+model = joblib.load('scaler.joblib')
 
 @app.route('/')
 def home():
